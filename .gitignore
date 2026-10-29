@@ -1,0 +1,16 @@
+cache/
+output/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# Credentials -- never commit
+barchart_key.txt
+.env
+sec_user_agent.txt
+
+# Personal working files
+prices.csv
+price_history/*.csv
+price_history.csv

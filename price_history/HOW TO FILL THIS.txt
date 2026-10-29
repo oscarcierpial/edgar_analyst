@@ -1,0 +1,23 @@
+PRICE HISTORY -- this is what makes "is 11x cheap?" answerable.
+
+One price tells you today's multiple. A history tells you whether that
+multiple is high or low FOR THIS COMPANY, which is the only version of the
+question that has an answer.
+
+WHAT TO DO (Barchart Premier can do this)
+  1. On barchart.com go to the stock's Historical Data / Download page
+  2. Download daily history -- 10 years if it offers it, 5 is enough
+  3. Drop the CSV straight into THIS folder
+  4. Name it after the ticker if the file has no Symbol column:  VST.csv
+
+Repeat per ticker. The program reads every .csv in here.
+
+FORMAT: it only needs a date and a close. Barchart's own export works
+untouched. So does anything with Date + Close columns. Date can be
+MM/DD/YYYY or YYYY-MM-DD -- both are handled.
+
+ALTERNATIVE: one combined file called price_history.csv in the folder ABOVE
+this one, if it has a Symbol column.
+
+WITHOUT THIS: you still get every current multiple. You just get no "vs its
+own history" column, which is the interesting half.
