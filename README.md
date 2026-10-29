@@ -18,7 +18,7 @@ Spreading a decade of financials by hand takes most of a day, and that's before 
 
 ## The four modules
 
-1. **Filing diff.** Downloads the two most recent 10-Ks, splits each into its numbered Items, and ranks sections by how much changed. Motivated by Cohen, Malloy & Nguyen, *"Lazy Prices"* (2020): firms that change their 10-K language tend to underperform.
+1. **Filing diff.** Downloads the two most recent 10-Ks, splits each into its numbered Items, and ranks sections by how much changed. 
 2. **Statement normalizer.** XBRL facts → clean, comparable annual statements. This is the foundation, and most of the code. See *Hard problems* below.
 3. **Red-flag screener.** Beneish M-score, Altman Z (or Z'' where appropriate), and 16 plain-language checks such as receivables outgrowing revenue, accruals and FCF conversion. A 0–100 composite score is provided for sorting only.
 4. **Reverse DCF.** Instead of guessing a value, it takes today's price as given and solves for the free-cash-flow growth the market requires, then compares that to what the company actually delivered. Includes a WACC × terminal-growth sensitivity grid. Assumptions (9% WACC, 2.5% terminal, 10 years) live in `config.py`, where you can see and defend them.
